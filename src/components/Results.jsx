@@ -19,6 +19,10 @@ const Results = ({ userInput }) => {
         {resultsData.map((yearData) => {
           const totalInterestValue =
             yearData.valueEndOfYear - yearData.annualInvestment * yearData.year;
+          const initialInvestment =
+            resultsData[0].valueEndOfYear -
+            resultsData[0].interest -
+            resultsData[0].annualInvestment;
           return (
             <tr key={yearData.year}>
               <td>{yearData.year}</td>
