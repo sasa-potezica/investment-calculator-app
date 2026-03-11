@@ -1,6 +1,6 @@
 import React from "react";
 import { calculateInvestmentResults, formatter } from "../util/investment";
-import { renderToReadableStream } from "react-dom/server";
+import "./Results.css";
 
 const Results = ({ userInput }) => {
   const resultsData = calculateInvestmentResults(userInput);
